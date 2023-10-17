@@ -1,0 +1,25 @@
+<svg height="64" width="128" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#8080FF">
+        <path 
+            d="
+                M 16 1
+                A 80 80 60 0 1 80 32
+                A 80 80 60 0 1 16 63
+                A 80 80 60 0 0 16 1
+            "
+        />
+    </g>
+    <g stroke="#0000FF" fill="none">
+        <path 
+            d="
+                M 16 1
+                A 80 80 60 0 1 80 32
+                A 80 80 60 0 1 16 63
+                A 80 80 60 0 0 16 1
+            "
+        />
+        <circle 
+            cx="85" cy="32" r="5"
+        />
+    </g>
+</svg>

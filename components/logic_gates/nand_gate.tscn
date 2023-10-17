@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdsjwb5dftpqh"]
+
+[ext_resource type="Script" path="res://components/logic_gates/nand_gate.gd" id="1_6vn87"]
+[ext_resource type="Texture2D" uid="uid://be4bgcqganmv2" path="res://assets/logic_gates/nand.svg" id="2_kcrtw"]
+[ext_resource type="PackedScene" uid="uid://bha1krfpd18y3" path="res://components/port.tscn" id="3_045m0"]
+
+[node name="nand_gate" type="Node2D"]
+script = ExtResource("1_6vn87")
+
+[node name="icon" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(64, 0)
+texture = ExtResource("2_kcrtw")
+
+[node name="port_in_1" parent="." instance=ExtResource("3_045m0")]
+position = Vector2(9, -15)
+
+[node name="port_in_2" parent="." instance=ExtResource("3_045m0")]
+position = Vector2(9, 15)
+
+[node name="port_out" parent="." instance=ExtResource("3_045m0")]
+position = Vector2(110, 0)
+level = 1
+mode = 1
